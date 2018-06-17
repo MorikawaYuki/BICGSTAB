@@ -3,12 +3,15 @@
 
 class Vector
 {
-  private:
+private:
 	double *v;
 	int size;
 
-  public:
+public:
 	void Init(int size);
+	Vector(const Vector &rhs);
+	double Norm() const;
+
 	double InnerProduct(const Vector &rhs) const;
 	Vector OuterProduct(const Vector &rhs) const;
 	Vector operator-(const Vector &rhs) const;

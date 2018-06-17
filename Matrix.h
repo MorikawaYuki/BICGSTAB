@@ -12,6 +12,7 @@ class Matrix
   public:
     void Init(int demension);
     Vector operator*(const Vector &rhs) const;
+    int GetDemension() const;
 };
 
 #endif
