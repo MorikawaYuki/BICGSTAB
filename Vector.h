@@ -8,12 +8,23 @@ private:
 	int size;
 
 public:
-	void Init(int size);
+	Vector(int size);
+	Vector() { size = 0; v = nullptr; }
 	Vector(const Vector &rhs);
-	double Norm() const;
+	~Vector()
+	{
+		if (v != nullptr)
+		{
+			delete[] v;
+			v = nullptr;
+		}
+		size = 0;
+	}
 
+	double Norm() const;
+	int Size() const;
+	double &operator[](const int idx) const;
 	double InnerProduct(const Vector &rhs) const;
-	Vector OuterProduct(const Vector &rhs) const;
 	Vector operator-(const Vector &rhs) const;
 	Vector operator+(const Vector &rhs) const;
 	Vector operator*(const double &rhs) const;
