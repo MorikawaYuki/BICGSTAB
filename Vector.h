@@ -15,12 +15,13 @@ public:
 	{
 		if (v != nullptr)
 		{
-			delete[] v;
+			//delete[] v;
 			v = nullptr;
 		}
 		size = 0;
 	}
 
+	void Random();
 	double Norm() const;
 	int Size() const;
 	double &operator[](const int idx) const;

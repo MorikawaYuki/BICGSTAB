@@ -8,13 +8,13 @@ int BICGSTAB::Solve(const Matrix &A, Vector &x, const Vector &b)
 	int demension = b.Size();
     vector<Vector> v, p;
     vector<double> rho, omega;
-    double alpha=0;
+    double alpha=1;
 
     Vector v0(demension), p0(demension);
     v.push_back(v0);
     p.push_back(p0);
-    rho.push_back(0);
-    omega.push_back(0);
+    rho.push_back(1);
+    omega.push_back(1);
     
     Vector residual = b - A * x;
     Vector res_hat = residual;
@@ -37,7 +37,7 @@ int BICGSTAB::Solve(const Matrix &A, Vector &x, const Vector &b)
             return i;
         }
     }
-
+	std::cout << "error:" << residual.Norm() / b.Norm() << std::endl;
     return -1;
 }
 

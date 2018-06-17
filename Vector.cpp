@@ -1,7 +1,8 @@
 #include "Vector.h"
 #include <assert.h>
 #include <cmath>
-
+#include <cstdlib>
+#include <ctime>
 Vector::Vector(int size)
 {
 	this->size = size;
@@ -16,6 +17,14 @@ Vector::Vector(const Vector& rhs)
 	this->v = new double[size];
 	for (int i = 0; i < size; i++)
 		v[i] = rhs[i];
+}
+
+void Vector::Random()
+{
+
+	srand((unsigned)time(NULL));
+	for (int i = 0; i < size; i++)
+		v[i] = rand() % 10;
 }
 
 double Vector::Norm() const

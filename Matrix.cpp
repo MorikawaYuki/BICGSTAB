@@ -1,12 +1,24 @@
 #include "Matrix.h"
 #include <assert.h>
-void Matrix::Init(int demension)
+#include <cstdlib>
+#include <ctime>
+
+Matrix::Matrix(int demension)
 {
 	this->demension = demension;
 	this->m = new double[demension*demension];
 	for (int i = 0; i < demension*demension; i++)
 		m[i] = 0;
-	
+}
+
+void Matrix::Random()
+{
+
+	srand((unsigned)time(NULL));
+	for (int i = 0; i < demension*demension; i++)
+	{
+		m[i] = rand() % 10;
+	}
 }
 
 Vector Matrix::operator*(const Vector & rhs) const
@@ -23,4 +35,9 @@ Vector Matrix::operator*(const Vector & rhs) const
 		}
 	}
 	return ret;
+}
+
+int Matrix::GetDemension() const
+{
+	return demension;
 }

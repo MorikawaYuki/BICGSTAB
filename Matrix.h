@@ -5,12 +5,14 @@
 
 class Matrix
 {
-  private:
+private:
     double *m;
     int demension;
 
-  public:
-    void Init(int demension);
+public:
+	
+	Matrix(int demension);
+	void Random();
     Vector operator*(const Vector &rhs) const;
     int GetDemension() const;
 };
