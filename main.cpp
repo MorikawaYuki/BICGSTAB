@@ -4,18 +4,21 @@ using namespace std;
 
 int main()
 {
-	int krylovdemension = 3;
-	int demension = 3;
+	int krylovdemension = 100;
+	int demension = 50;
 	double tolerance = 0.01;
 
 	BICGSTAB solver(krylovdemension, tolerance);
+
+	
+
 	Matrix A(demension);
 	A.Random();
 	Vector b(demension), x(demension),temp(demension);
 	temp.Random();
 	b = A * temp;
 
-	solver.Solve(A,x,b);
+	cout<<solver.Solve(A,x,b)<<endl;
 
 	for (int i = 0; i < 3; i++)
 		cout << x[i] << " ";
@@ -33,5 +36,4 @@ int main()
 	for (int i = 0; i < 3; i++)
 		cout << b[i] << " ";
 	cout << endl;
-	getchar();
 }

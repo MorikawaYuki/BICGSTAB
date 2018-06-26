@@ -6,7 +6,7 @@
 class Matrix
 {
 private:
-    double *m;
+    std::complex<double> *m;
     int demension;
 
 public:

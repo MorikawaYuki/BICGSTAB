@@ -6,15 +6,15 @@
 Vector::Vector(int size)
 {
 	this->size = size;
-	this->v = new double[size];
+	this->v = new std::complex<double>[size];
 	for (int i = 0; i < size; i++)
 		v[i] = 0;
 }
 
-Vector::Vector(const Vector& rhs)
+Vector::Vector(const Vector &rhs)
 {
 	this->size = rhs.size;
-	this->v = new double[size];
+	this->v = new std::complex<double>[size];
 	for (int i = 0; i < size; i++)
 		v[i] = rhs[i];
 }
@@ -31,7 +31,7 @@ double Vector::Norm() const
 {
 	double ret = 0;
 	for (int i = 0; i < size; i++)
-		ret += v[i];
+		ret += std::abs(v[i]) * std::abs(v[i]);
 	ret = std::sqrt(ret);
 	return ret;
 }
@@ -41,25 +41,24 @@ int Vector::Size() const
 	return int(size);
 }
 
-double &Vector::operator[](const int idx) const
+
+std::complex<double> &Vector::operator[](const int idx) const
 {
 	assert(idx >= 0 && idx < size);
 	return v[idx];
 }
 
-double Vector::InnerProduct(const Vector & rhs) const
+std::complex<double> Vector::InnerProduct(const Vector &rhs) const
 {
 	assert(size == rhs.size);
-	double ret = 0;
+	std::complex<double> ret = 0;
 	for (int i = 0; i < size; i++)
-		ret += v[i] * rhs[i];
-	
+		ret = ret + v[i] * rhs[i];
+
 	return ret;
 }
 
-
-
-Vector Vector::operator-(const Vector & rhs) const
+Vector Vector::operator-(const Vector &rhs) const
 {
 	Vector ret = *this;
 	for (int i = 0; i < size; i++)
@@ -67,7 +66,7 @@ Vector Vector::operator-(const Vector & rhs) const
 	return ret;
 }
 
-Vector Vector::operator+(const Vector & rhs) const
+Vector Vector::operator+(const Vector &rhs) const
 {
 	Vector ret = *this;
 	for (int i = 0; i < size; i++)
@@ -75,7 +74,7 @@ Vector Vector::operator+(const Vector & rhs) const
 	return ret;
 }
 
-Vector Vector::operator*(const double & rhs) const
+Vector Vector::operator*(const std::complex<double> &rhs) const
 {
 	Vector ret = *this;
 	for (int i = 0; i < size; i++)
@@ -83,10 +82,10 @@ Vector Vector::operator*(const double & rhs) const
 	return ret;
 }
 
-Vector operator*(const double & d, const Vector & v)
+Vector operator*(const std::complex<double> &c, const Vector &v)
 {
 	Vector ret = v;
 	for (int i = 0; i < v.Size(); i++)
-		ret[i] *= d;
+		ret[i] *= c;
 	return ret;
 }

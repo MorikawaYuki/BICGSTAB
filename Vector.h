@@ -1,10 +1,12 @@
 #ifndef _VECTOR_H_
 #define _VECTOR_H_
 
+#include<complex>
+
 class Vector
 {
 private:
-	double *v;
+	std::complex<double> *v;
 	int size;
 
 public:
@@ -24,12 +26,13 @@ public:
 	void Random();
 	double Norm() const;
 	int Size() const;
-	double &operator[](const int idx) const;
-	double InnerProduct(const Vector &rhs) const;
+	std::complex<double> &operator[](const int idx) const;
+	std::complex<double> InnerProduct(const Vector &rhs) const;
 	Vector operator-(const Vector &rhs) const;
 	Vector operator+(const Vector &rhs) const;
-	Vector operator*(const double &rhs) const;
-	friend Vector operator*(const double &d, const Vector &v);
+	Vector operator*(const std::complex<double> & rhs) const;
+	
+	friend Vector operator*(const std::complex<double> &c, const Vector &v);
 };
 
 #endif
