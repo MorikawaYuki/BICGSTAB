@@ -14,6 +14,7 @@ public:
 	Matrix(int demension);
 	void Random();
     Vector operator*(const Vector &rhs) const;
+	std::complex<double> &operator[](const int idx) const;
     int GetDemension() const;
 };
 
