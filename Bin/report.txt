@@ -1,0 +1,1125 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 23.18      7.21     7.21 678162655     0.00     0.00  std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&)
+ 18.21     12.88     5.67 675879355     0.00     0.00  std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&)
+ 12.15     16.66     3.78      861     0.00     0.04  Matrix::operator*(Vector const&) const
+ 11.86     20.35     3.69 677020575     0.00     0.00  std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&)
+ 10.82     23.72     3.37 1356327485     0.00     0.00  std::complex<double>::real[abi:cxx11]() const
+ 10.62     27.03     3.31 1356327485     0.00     0.00  std::complex<double>::imag[abi:cxx11]() const
+ 10.29     30.23     3.20 689729175     0.00     0.00  Vector::operator[](int) const
+  0.68     30.44     0.21  7784462     0.00     0.00  std::complex<double>::complex(double, double)
+  0.68     30.65     0.21  1548750     0.00     0.00  std::complex<double>::operator=(double)
+  0.64     30.85     0.20     1720     0.00     0.00  std::complex<double>& std::complex<double>::operator/=<double>(std::complex<double> const&)
+  0.34     30.95     0.11     1720     0.00     0.00  std::complex<double> std::operator/<double>(std::complex<double> const&, std::complex<double> const&)
+  0.26     31.03     0.08  2287603     0.00     0.00  Vector::Size() const
+  0.16     31.08     0.05     7046     0.00     0.00  Vector::Vector(Vector const&)
+  0.05     31.10     0.02  1522200     0.00     0.00  double std::abs<double>(std::complex<double> const&)
+  0.03     31.11     0.01  1522200     0.00     0.00  std::complex<double> std::operator+<double>(std::complex<double> const&, std::complex<double> const&)
+  0.03     31.12     0.01     1720     0.00     0.00  Vector::InnerProduct(Vector const&) const
+  0.03     31.13     0.01      865     0.00     0.00  Vector::Vector(int)
+  0.02     31.13     0.01  1522200     0.00     0.00  std::complex<double>::__rep() const
+  0.00     31.13     0.00  1522200     0.00     0.00  std::__complex_abs(doublecomplex )
+  0.00     31.13     0.00  1142535     0.00     0.00  std::complex<double>& std::complex<double>::operator-=<double>(std::complex<double> const&)
+  0.00     31.13     0.00   783225     0.00     0.00  Matrix::operator[](int) const
+  0.00     31.13     0.00     7911     0.00     0.00  Vector::~Vector()
+  0.00     31.13     0.00     5676     0.00     0.00  operator new(unsigned long, void*)
+  0.00     31.13     0.00     4651     0.00     0.00  std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&)
+  0.00     31.13     0.00     4214     0.00     0.00  std::move_iterator<std::complex<double>*>::base() const
+  0.00     31.13     0.00     3895     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::operator[](unsigned long)
+  0.00     31.13     0.00     2906     0.00     0.00  Vector* std::__addressof<Vector>(Vector&)
+  0.00     31.13     0.00     2598     0.00     0.00  Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&)
+  0.00     31.13     0.00     2580     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::operator[](unsigned long)
+  0.00     31.13     0.00     2580     0.00     0.00  operator*(std::complex<double> const&, Vector const&)
+  0.00     31.13     0.00     2107     0.00     0.00  bool std::operator==<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&)
+  0.00     31.13     0.00     2107     0.00     0.00  bool std::operator!=<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&)
+  0.00     31.13     0.00     2045     0.00     0.00  std::move_iterator<std::complex<double>*>::operator*() const
+  0.00     31.13     0.00     2045     0.00     0.00  std::move_iterator<std::complex<double>*>::operator++()
+  0.00     31.13     0.00     2045     0.00     0.00  void std::_Construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&)
+  0.00     31.13     0.00     2045     0.00     0.00  std::complex<double>* std::__addressof<std::complex<double> >(std::complex<double>&)
+  0.00     31.13     0.00     1884     0.00     0.00  void std::_Destroy<Vector>(Vector*)
+  0.00     31.13     0.00     1781     0.00     0.00  std::complex<double> const& std::forward<std::complex<double> const&>(std::remove_reference<std::complex<double> const&>::type&)
+  0.00     31.13     0.00     1291     0.00     0.00  Vector::operator-(Vector const&) const
+  0.00     31.13     0.00     1290     0.00     0.00  Vector::operator+(Vector const&) const
+  0.00     31.13     0.00     1028     0.00     0.00  Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&)
+  0.00     31.13     0.00     1022     0.00     0.00  void std::_Construct<Vector, Vector const&>(Vector*, Vector const&)
+  0.00     31.13     0.00     1011     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::size() const
+  0.00     31.13     0.00      885     0.00     0.00  void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> const&>(std::complex<double>*, std::complex<double> const&)
+  0.00     31.13     0.00      885     0.00     0.00  void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&)
+  0.00     31.13     0.00      885     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&)
+  0.00     31.13     0.00      862     0.00     0.00  void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&)
+  0.00     31.13     0.00      862     0.00     0.00  void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&)
+  0.00     31.13     0.00      862     0.00     0.00  void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&)
+  0.00     31.13     0.00      862     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double>&&)
+  0.00     31.13     0.00      862     0.00     0.00  std::remove_reference<std::complex<double>&>::type&& std::move<std::complex<double>&>(std::complex<double>&)
+  0.00     31.13     0.00      860     0.00     0.00  void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&)
+  0.00     31.13     0.00      860     0.00     0.00  Vector::Norm() const
+  0.00     31.13     0.00      860     0.00     0.00  void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&)
+  0.00     31.13     0.00      860     0.00     0.00  void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&)
+  0.00     31.13     0.00      860     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::push_back(Vector&&)
+  0.00     31.13     0.00      860     0.00     0.00  std::remove_reference<Vector&>::type&& std::move<Vector&>(Vector&)
+  0.00     31.13     0.00      124     0.00     0.00  __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::base() const
+  0.00     31.13     0.00      124     0.00     0.00  std::move_iterator<std::complex<double>*>::move_iterator(std::complex<double>*)
+  0.00     31.13     0.00      124     0.00     0.00  std::move_iterator<std::complex<double>*> std::__make_move_if_noexcept_iterator<std::complex<double>, std::move_iterator<std::complex<double>*> >(std::complex<double>*)
+  0.00     31.13     0.00       96     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator()
+  0.00     31.13     0.00       93     0.00     0.00  __gnu_cxx::new_allocator<std::complex<double> >::max_size() const
+  0.00     31.13     0.00       80     0.00     0.00  __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::base() const
+  0.00     31.13     0.00       80     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::size() const
+  0.00     31.13     0.00       80     0.00     0.00  Vector const* std::__make_move_if_noexcept_iterator<Vector, Vector const*>(Vector*)
+  0.00     31.13     0.00       62     0.00     0.00  __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::__normal_iterator(std::complex<double>* const&)
+  0.00     31.13     0.00       62     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() const
+  0.00     31.13     0.00       62     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::max_size() const
+  0.00     31.13     0.00       62     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator()
+  0.00     31.13     0.00       62     0.00     0.00  std::allocator_traits<std::allocator<std::complex<double> > >::max_size(std::allocator<std::complex<double> > const&)
+  0.00     31.13     0.00       62     0.00     0.00  std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*)
+  0.00     31.13     0.00       62     0.00     0.00  std::complex<double>* std::uninitialized_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*)
+  0.00     31.13     0.00       62     0.00     0.00  std::complex<double>* std::__uninitialized_copy_a<std::move_iterator<std::complex<double>*>, std::complex<double>*, std::complex<double> >(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*, std::allocator<std::complex<double> >&)
+  0.00     31.13     0.00       62     0.00     0.00  std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&)
+  0.00     31.13     0.00       60     0.00     0.00  __gnu_cxx::new_allocator<Vector>::max_size() const
+  0.00     31.13     0.00       51     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     31.13     0.00       40     0.00     0.00  __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::__normal_iterator(Vector* const&)
+  0.00     31.13     0.00       40     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() const
+  0.00     31.13     0.00       40     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::max_size() const
+  0.00     31.13     0.00       40     0.00     0.00  std::allocator_traits<std::allocator<Vector> >::max_size(std::allocator<Vector> const&)
+  0.00     31.13     0.00       40     0.00     0.00  Vector* std::__uninitialized_copy<false>::__uninit_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*)
+  0.00     31.13     0.00       40     0.00     0.00  Vector* std::uninitialized_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*)
+  0.00     31.13     0.00       40     0.00     0.00  Vector* std::__uninitialized_copy_a<Vector const*, Vector*, Vector>(Vector const*, Vector const*, Vector*, std::allocator<Vector>&)
+  0.00     31.13     0.00       40     0.00     0.00  Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&)
+  0.00     31.13     0.00       34     0.00     0.00  void std::_Destroy_aux<true>::__destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*)
+  0.00     31.13     0.00       34     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long)
+  0.00     31.13     0.00       34     0.00     0.00  void std::_Destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*)
+  0.00     31.13     0.00       34     0.00     0.00  void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&)
+  0.00     31.13     0.00       31     0.00     0.00  __gnu_cxx::new_allocator<std::complex<double> >::deallocate(std::complex<double>*, unsigned long)
+  0.00     31.13     0.00       31     0.00     0.00  __gnu_cxx::new_allocator<std::complex<double> >::allocate(unsigned long, void const*)
+  0.00     31.13     0.00       31     0.00     0.00  __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::difference_type __gnu_cxx::operator-<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&, __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&)
+  0.00     31.13     0.00       31     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const
+  0.00     31.13     0.00       31     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_allocate(unsigned long)
+  0.00     31.13     0.00       31     0.00     0.00  std::allocator_traits<std::allocator<std::complex<double> > >::deallocate(std::allocator<std::complex<double> >&, std::complex<double>*, unsigned long)
+  0.00     31.13     0.00       31     0.00     0.00  std::allocator_traits<std::allocator<std::complex<double> > >::allocate(std::allocator<std::complex<double> >&, unsigned long)
+  0.00     31.13     0.00       31     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::end()
+  0.00     31.13     0.00       31     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::begin()
+  0.00     31.13     0.00       22     0.00     0.00  void std::_Destroy_aux<false>::__destroy<Vector*>(Vector*, Vector*)
+  0.00     31.13     0.00       22     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long)
+  0.00     31.13     0.00       22     0.00     0.00  void std::_Destroy<Vector*>(Vector*, Vector*)
+  0.00     31.13     0.00       22     0.00     0.00  void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&)
+  0.00     31.13     0.00       20     0.00     0.00  __gnu_cxx::new_allocator<Vector>::deallocate(Vector*, unsigned long)
+  0.00     31.13     0.00       20     0.00     0.00  __gnu_cxx::new_allocator<Vector>::allocate(unsigned long, void const*)
+  0.00     31.13     0.00       20     0.00     0.00  __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::difference_type __gnu_cxx::operator-<Vector*, std::vector<Vector, std::allocator<Vector> > >(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&, __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&)
+  0.00     31.13     0.00       20     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const
+  0.00     31.13     0.00       20     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_M_allocate(unsigned long)
+  0.00     31.13     0.00       20     0.00     0.00  std::allocator_traits<std::allocator<Vector> >::deallocate(std::allocator<Vector>&, Vector*, unsigned long)
+  0.00     31.13     0.00       20     0.00     0.00  std::allocator_traits<std::allocator<Vector> >::allocate(std::allocator<Vector>&, unsigned long)
+  0.00     31.13     0.00       20     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::end()
+  0.00     31.13     0.00       20     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::begin()
+  0.00     31.13     0.00       20     0.00     0.00  void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&)
+  0.00     31.13     0.00       18     0.00     0.00  void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&)
+  0.00     31.13     0.00       11     0.00     0.00  void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&)
+  0.00     31.13     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::complex<double> >::new_allocator()
+  0.00     31.13     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::complex<double> >::~new_allocator()
+  0.00     31.13     0.00        3     0.00     0.00  std::allocator<std::complex<double> >::allocator()
+  0.00     31.13     0.00        3     0.00     0.00  std::allocator<std::complex<double> >::~allocator()
+  0.00     31.13     0.00        3     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::_Vector_impl()
+  0.00     31.13     0.00        3     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::~_Vector_impl()
+  0.00     31.13     0.00        3     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_base()
+  0.00     31.13     0.00        3     0.00     0.00  std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::~_Vector_base()
+  0.00     31.13     0.00        3     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::vector()
+  0.00     31.13     0.00        3     0.00     0.00  std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector()
+  0.00     31.13     0.00        2     0.00     0.00  tbb::tick_count::now()
+  0.00     31.13     0.00        2     0.00     0.00  tbb::tick_count::tick_count()
+  0.00     31.13     0.00        2     0.00     0.00  void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&)
+  0.00     31.13     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<Vector>::new_allocator()
+  0.00     31.13     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<Vector>::~new_allocator()
+  0.00     31.13     0.00        2     0.00     0.00  std::allocator<Vector>::allocator()
+  0.00     31.13     0.00        2     0.00     0.00  std::allocator<Vector>::~allocator()
+  0.00     31.13     0.00        2     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::_Vector_impl()
+  0.00     31.13     0.00        2     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::~_Vector_impl()
+  0.00     31.13     0.00        2     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_base()
+  0.00     31.13     0.00        2     0.00     0.00  std::_Vector_base<Vector, std::allocator<Vector> >::~_Vector_base()
+  0.00     31.13     0.00        2     0.00     0.00  void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector const&>(std::allocator<Vector>&, Vector*, Vector const&)
+  0.00     31.13     0.00        2     0.00     0.00  void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&)
+  0.00     31.13     0.00        2     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::push_back(Vector const&)
+  0.00     31.13     0.00        2     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::vector()
+  0.00     31.13     0.00        2     0.00     0.00  std::vector<Vector, std::allocator<Vector> >::~vector()
+  0.00     31.13     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN8BICGSTAB5SolveERK6MatrixR6VectorRKS3_
+  0.00     31.13     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00     31.13     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     31.13     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     31.13     0.00        1     0.00     0.00  tbb::tick_count::interval_t::ticks_per_second()
+  0.00     31.13     0.00        1     0.00     0.00  tbb::tick_count::interval_t::interval_t(long long)
+  0.00     31.13     0.00        1     0.00     0.00  tbb::tick_count::resolution()
+  0.00     31.13     0.00        1     0.00     0.00  tbb::operator-(tbb::tick_count const&, tbb::tick_count const&)
+  0.00     31.13     0.00        1     0.00     0.13  Matrix::Matrix(int)
+  0.00     31.13     0.00        1     0.00    31.01  BICGSTAB::Solve(Matrix const&, Vector&, Vector const&)
+  0.00     31.13     0.00        1     0.00     0.00  BICGSTAB::BICGSTAB(int, double)
+  0.00     31.13     0.00        1     0.00     0.00  tbb::tick_count::interval_t::seconds() const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.03% of 31.13 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00   31.13                 main [1]
+                0.00   31.01       1/1           BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                0.00    0.13       1/1           Matrix::Matrix(int) [17]
+                0.00    0.00       2/865         Vector::Vector(int) [16]
+                0.00    0.00     885/689729175     Vector::operator[](int) const [9]
+                0.00    0.00  783225/783225      Matrix::operator[](int) const [48]
+                0.00    0.00     887/1011        std::vector<std::complex<double>, std::allocator<std::complex<double> > >::size() const [66]
+                0.00    0.00     885/885         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&) [69]
+                0.00    0.00     885/3895        std::vector<std::complex<double>, std::allocator<std::complex<double> > >::operator[](unsigned long) [53]
+                0.00    0.00       2/2           tbb::tick_count::now() [137]
+                0.00    0.00       2/7911        Vector::~Vector() [49]
+                0.00    0.00       1/1           BICGSTAB::BICGSTAB(int, double) [157]
+                0.00    0.00       1/3           std::vector<std::complex<double>, std::allocator<std::complex<double> > >::vector() [135]
+                0.00    0.00       1/1           tbb::operator-(tbb::tick_count const&, tbb::tick_count const&) [156]
+                0.00    0.00       1/1           tbb::tick_count::interval_t::seconds() const [158]
+                0.00    0.00       1/3           std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector() [136]
+-----------------------------------------------
+                0.00   31.01       1/1           main [1]
+[2]     99.6    0.00   31.01       1         BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                3.78   26.41     861/861         Matrix::operator*(Vector const&) const [3]
+                0.11    0.20    1720/1720        std::complex<double> std::operator/<double>(std::complex<double> const&, std::complex<double> const&) [10]
+                0.00    0.22    2580/2580        operator*(std::complex<double> const&, Vector const&) [12]
+                0.01    0.07    1720/1720        Vector::InnerProduct(Vector const&) const [19]
+                0.00    0.07    1290/1290        Vector::operator+(Vector const&) const [20]
+                0.00    0.06     860/860         std::vector<Vector, std::allocator<Vector> >::push_back(Vector&&) [22]
+                0.00    0.06    1291/1291        Vector::operator-(Vector const&) const [23]
+                0.00    0.02     860/860         Vector::Norm() const [34]
+                0.00    0.00       2/2           std::vector<Vector, std::allocator<Vector> >::push_back(Vector const&) [38]
+                0.00    0.00       2/865         Vector::Vector(int) [16]
+                0.00    0.00       1/7046        Vector::Vector(Vector const&) [11]
+                0.00    0.00     430/675879355     std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&) [4]
+                0.00    0.00       2/7784462     std::complex<double>::complex(double, double) [14]
+                0.00    0.00       1/2287603     Vector::Size() const [18]
+                0.00    0.00    6025/7911        Vector::~Vector() [49]
+                0.00    0.00    3010/3895        std::vector<std::complex<double>, std::allocator<std::complex<double> > >::operator[](unsigned long) [53]
+                0.00    0.00    2580/2580        std::vector<Vector, std::allocator<Vector> >::operator[](unsigned long) [56]
+                0.00    0.00     862/862         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double>&&) [73]
+                0.00    0.00       2/2           std::vector<Vector, std::allocator<Vector> >::vector() [147]
+                0.00    0.00       2/3           std::vector<std::complex<double>, std::allocator<std::complex<double> > >::vector() [135]
+                0.00    0.00       2/3           std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector() [136]
+                0.00    0.00       2/2           std::vector<Vector, std::allocator<Vector> >::~vector() [148]
+-----------------------------------------------
+                3.78   26.41     861/861         BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[3]     97.0    3.78   26.41     861         Matrix::operator*(Vector const&) const [3]
+                5.65   10.49 674356725/675879355     std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&) [4]
+                3.68    3.32 674356725/677020575     std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&) [6]
+                3.13    0.00 675118710/689729175     Vector::operator[](int) const [9]
+                0.01    0.12     861/865         Vector::Vector(int) [16]
+                0.00    0.00    1722/2287603     Vector::Size() const [18]
+-----------------------------------------------
+                0.00    0.00     430/675879355     BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                0.01    0.02 1522200/675879355     Vector::InnerProduct(Vector const&) const [19]
+                5.65   10.49 674356725/675879355     Matrix::operator*(Vector const&) const [3]
+[4]     52.0    5.67   10.51 675879355         std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&) [4]
+                7.19    3.33 675879355/678162655     std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&) [5]
+-----------------------------------------------
+                0.02    0.01 2283300/678162655     operator*(std::complex<double> const&, Vector const&) [12]
+                7.19    3.33 675879355/678162655     std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&) [4]
+[5]     33.9    7.21    3.34 678162655         std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&) [5]
+                1.68    0.00 678162655/1356327485     std::complex<double>::real[abi:cxx11]() const [7]
+                1.65    0.00 678162655/1356327485     std::complex<double>::imag[abi:cxx11]() const [8]
+-----------------------------------------------
+                0.01    0.01 1141650/677020575     Vector::operator+(Vector const&) const [20]
+                0.01    0.01 1522200/677020575     std::complex<double> std::operator+<double>(std::complex<double> const&, std::complex<double> const&) [32]
+                3.68    3.32 674356725/677020575     Matrix::operator*(Vector const&) const [3]
+[6]     22.6    3.69    3.33 677020575         std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&) [6]
+                1.68    0.00 677020575/1356327485     std::complex<double>::real[abi:cxx11]() const [7]
+                1.65    0.00 677020575/1356327485     std::complex<double>::imag[abi:cxx11]() const [8]
+-----------------------------------------------
+                0.00    0.00    1720/1356327485     std::complex<double>& std::complex<double>::operator/=<double>(std::complex<double> const&) [15]
+                0.00    0.00 1142535/1356327485     std::complex<double>& std::complex<double>::operator-=<double>(std::complex<double> const&) [35]
+                1.68    0.00 677020575/1356327485     std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&) [6]
+                1.68    0.00 678162655/1356327485     std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&) [5]
+[7]     10.8    3.37    0.00 1356327485         std::complex<double>::real[abi:cxx11]() const [7]
+-----------------------------------------------
+                0.00    0.00    1720/1356327485     std::complex<double>& std::complex<double>::operator/=<double>(std::complex<double> const&) [15]
+                0.00    0.00 1142535/1356327485     std::complex<double>& std::complex<double>::operator-=<double>(std::complex<double> const&) [35]
+                1.65    0.00 677020575/1356327485     std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&) [6]
+                1.65    0.00 678162655/1356327485     std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&) [5]
+[8]     10.6    3.31    0.00 1356327485         std::complex<double>::imag[abi:cxx11]() const [8]
+-----------------------------------------------
+                0.00    0.00     885/689729175     main [1]
+                0.01    0.00 1522200/689729175     Vector::InnerProduct(Vector const&) const [19]
+                0.01    0.00 2283300/689729175     Vector::operator+(Vector const&) const [20]
+                0.01    0.00 2283300/689729175     operator*(std::complex<double> const&, Vector const&) [12]
+                0.01    0.00 2285070/689729175     Vector::operator-(Vector const&) const [23]
+                0.03    0.00 6235710/689729175     Vector::Vector(Vector const&) [11]
+                3.13    0.00 675118710/689729175     Matrix::operator*(Vector const&) const [3]
+[9]     10.3    3.20    0.00 689729175         Vector::operator[](int) const [9]
+-----------------------------------------------
+                0.11    0.20    1720/1720        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[10]     1.0    0.11    0.20    1720         std::complex<double> std::operator/<double>(std::complex<double> const&, std::complex<double> const&) [10]
+                0.20    0.00    1720/1720        std::complex<double>& std::complex<double>::operator/=<double>(std::complex<double> const&) [15]
+-----------------------------------------------
+                0.00    0.00       1/7046        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                0.00    0.00       2/7046        void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&) [39]
+                0.01    0.02     860/7046        void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&) [30]
+                0.01    0.03    1022/7046        void std::_Construct<Vector, Vector const&>(Vector*, Vector const&) [24]
+                0.01    0.04    1290/7046        Vector::operator+(Vector const&) const [20]
+                0.01    0.04    1291/7046        Vector::operator-(Vector const&) const [23]
+                0.02    0.07    2580/7046        operator*(std::complex<double> const&, Vector const&) [12]
+[11]     0.8    0.05    0.20    7046         Vector::Vector(Vector const&) [11]
+                0.17    0.00 6235710/7784462     std::complex<double>::complex(double, double) [14]
+                0.03    0.00 6235710/689729175     Vector::operator[](int) const [9]
+-----------------------------------------------
+                0.00    0.22    2580/2580        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[12]     0.7    0.00    0.22    2580         operator*(std::complex<double> const&, Vector const&) [12]
+                0.02    0.07    2580/7046        Vector::Vector(Vector const&) [11]
+                0.08    0.00 2285880/2287603     Vector::Size() const [18]
+                0.02    0.01 2283300/678162655     std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&) [5]
+                0.01    0.00 2283300/689729175     Vector::operator[](int) const [9]
+-----------------------------------------------
+                0.10    0.00  765525/1548750     Vector::Vector(int) [16]
+                0.11    0.00  783225/1548750     Matrix::Matrix(int) [17]
+[13]     0.7    0.21    0.00 1548750         std::complex<double>::operator=(double) [13]
+-----------------------------------------------
+                0.00    0.00       2/7784462     BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                0.02    0.00  765525/7784462     Vector::Vector(int) [16]
+                0.02    0.00  783225/7784462     Matrix::Matrix(int) [17]
+                0.17    0.00 6235710/7784462     Vector::Vector(Vector const&) [11]
+[14]     0.7    0.21    0.00 7784462         std::complex<double>::complex(double, double) [14]
+-----------------------------------------------
+                0.20    0.00    1720/1720        std::complex<double> std::operator/<double>(std::complex<double> const&, std::complex<double> const&) [10]
+[15]     0.6    0.20    0.00    1720         std::complex<double>& std::complex<double>::operator/=<double>(std::complex<double> const&) [15]
+                0.00    0.00    1720/1356327485     std::complex<double>::real[abi:cxx11]() const [7]
+                0.00    0.00    1720/1356327485     std::complex<double>::imag[abi:cxx11]() const [8]
+-----------------------------------------------
+                0.00    0.00       2/865         BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                0.00    0.00       2/865         main [1]
+                0.01    0.12     861/865         Matrix::operator*(Vector const&) const [3]
+[16]     0.4    0.01    0.12     865         Vector::Vector(int) [16]
+                0.10    0.00  765525/1548750     std::complex<double>::operator=(double) [13]
+                0.02    0.00  765525/7784462     std::complex<double>::complex(double, double) [14]
+-----------------------------------------------
+                0.00    0.13       1/1           main [1]
+[17]     0.4    0.00    0.13       1         Matrix::Matrix(int) [17]
+                0.11    0.00  783225/1548750     std::complex<double>::operator=(double) [13]
+                0.02    0.00  783225/7784462     std::complex<double>::complex(double, double) [14]
+-----------------------------------------------
+                0.00    0.00       1/2287603     BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+                0.00    0.00    1722/2287603     Matrix::operator*(Vector const&) const [3]
+                0.08    0.00 2285880/2287603     operator*(std::complex<double> const&, Vector const&) [12]
+[18]     0.3    0.08    0.00 2287603         Vector::Size() const [18]
+-----------------------------------------------
+                0.01    0.07    1720/1720        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[19]     0.3    0.01    0.07    1720         Vector::InnerProduct(Vector const&) const [19]
+                0.01    0.02 1522200/675879355     std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&) [4]
+                0.01    0.02 1522200/1522200     std::complex<double> std::operator+<double>(std::complex<double> const&, std::complex<double> const&) [32]
+                0.01    0.00 1522200/689729175     Vector::operator[](int) const [9]
+-----------------------------------------------
+                0.00    0.07    1290/1290        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[20]     0.2    0.00    0.07    1290         Vector::operator+(Vector const&) const [20]
+                0.01    0.04    1290/7046        Vector::Vector(Vector const&) [11]
+                0.01    0.01 1141650/677020575     std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&) [6]
+                0.01    0.00 2283300/689729175     Vector::operator[](int) const [9]
+-----------------------------------------------
+                0.00    0.06     860/860         std::vector<Vector, std::allocator<Vector> >::push_back(Vector&&) [22]
+[21]     0.2    0.00    0.06     860         void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [21]
+                0.00    0.03      18/18          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+                0.00    0.03     842/860         void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&) [31]
+                0.00    0.00     860/2598        Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&) [55]
+                0.00    0.00      18/20          std::vector<Vector, std::allocator<Vector> >::end() [123]
+-----------------------------------------------
+                0.00    0.06     860/860         BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[22]     0.2    0.00    0.06     860         std::vector<Vector, std::allocator<Vector> >::push_back(Vector&&) [22]
+                0.00    0.06     860/860         void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [21]
+                0.00    0.00     860/860         std::remove_reference<Vector&>::type&& std::move<Vector&>(Vector&) [75]
+-----------------------------------------------
+                0.00    0.06    1291/1291        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[23]     0.2    0.00    0.06    1291         Vector::operator-(Vector const&) const [23]
+                0.01    0.04    1291/7046        Vector::Vector(Vector const&) [11]
+                0.01    0.00 2285070/689729175     Vector::operator[](int) const [9]
+                0.00    0.01 1142535/1142535     std::complex<double>& std::complex<double>::operator-=<double>(std::complex<double> const&) [35]
+-----------------------------------------------
+                0.00    0.04    1022/1022        Vector* std::__uninitialized_copy<false>::__uninit_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [25]
+[24]     0.1    0.00    0.04    1022         void std::_Construct<Vector, Vector const&>(Vector*, Vector const&) [24]
+                0.01    0.03    1022/7046        Vector::Vector(Vector const&) [11]
+                0.00    0.00    1022/1028        Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&) [65]
+                0.00    0.00    1022/5676        operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.04      40/40          Vector* std::uninitialized_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [26]
+[25]     0.1    0.00    0.04      40         Vector* std::__uninitialized_copy<false>::__uninit_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [25]
+                0.00    0.04    1022/1022        void std::_Construct<Vector, Vector const&>(Vector*, Vector const&) [24]
+                0.00    0.00    1022/2906        Vector* std::__addressof<Vector>(Vector&) [54]
+-----------------------------------------------
+                0.00    0.04      40/40          Vector* std::__uninitialized_copy_a<Vector const*, Vector*, Vector>(Vector const*, Vector const*, Vector*, std::allocator<Vector>&) [27]
+[26]     0.1    0.00    0.04      40         Vector* std::uninitialized_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [26]
+                0.00    0.04      40/40          Vector* std::__uninitialized_copy<false>::__uninit_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [25]
+-----------------------------------------------
+                0.00    0.04      40/40          Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&) [28]
+[27]     0.1    0.00    0.04      40         Vector* std::__uninitialized_copy_a<Vector const*, Vector*, Vector>(Vector const*, Vector const*, Vector*, std::allocator<Vector>&) [27]
+                0.00    0.04      40/40          Vector* std::uninitialized_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [26]
+-----------------------------------------------
+                0.00    0.00       4/40          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.03      36/40          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[28]     0.1    0.00    0.04      40         Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&) [28]
+                0.00    0.04      40/40          Vector* std::__uninitialized_copy_a<Vector const*, Vector*, Vector>(Vector const*, Vector const*, Vector*, std::allocator<Vector>&) [27]
+                0.00    0.00      80/80          Vector const* std::__make_move_if_noexcept_iterator<Vector, Vector const*>(Vector*) [83]
+-----------------------------------------------
+                0.00    0.03      18/18          void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [21]
+[29]     0.1    0.00    0.03      18         void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+                0.00    0.03      36/40          Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&) [28]
+                0.00    0.00      18/860         void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&) [31]
+                0.00    0.00      54/62          std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() [87]
+                0.00    0.00      36/80          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::base() const [81]
+                0.00    0.00      18/20          std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [119]
+                0.00    0.00      18/20          std::vector<Vector, std::allocator<Vector> >::begin() [124]
+                0.00    0.00      18/20          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::difference_type __gnu_cxx::operator-<Vector*, std::vector<Vector, std::allocator<Vector> > >(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&, __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&) [118]
+                0.00    0.00      18/20          std::_Vector_base<Vector, std::allocator<Vector> >::_M_allocate(unsigned long) [120]
+                0.00    0.00      18/2598        Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&) [55]
+                0.00    0.00      18/22          void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&) [115]
+                0.00    0.00      18/22          std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long) [113]
+-----------------------------------------------
+                0.00    0.03     860/860         void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&) [31]
+[30]     0.1    0.00    0.03     860         void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&) [30]
+                0.01    0.02     860/7046        Vector::Vector(Vector const&) [11]
+                0.00    0.00     860/2598        Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&) [55]
+                0.00    0.00     860/5676        operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.00      18/860         void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+                0.00    0.03     842/860         void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [21]
+[31]     0.1    0.00    0.03     860         void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&) [31]
+                0.00    0.03     860/860         void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&) [30]
+                0.00    0.00     860/2598        Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&) [55]
+-----------------------------------------------
+                0.01    0.02 1522200/1522200     Vector::InnerProduct(Vector const&) const [19]
+[32]     0.1    0.01    0.02 1522200         std::complex<double> std::operator+<double>(std::complex<double> const&, std::complex<double> const&) [32]
+                0.01    0.01 1522200/677020575     std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&) [6]
+-----------------------------------------------
+                0.02    0.01 1522200/1522200     Vector::Norm() const [34]
+[33]     0.1    0.02    0.01 1522200         double std::abs<double>(std::complex<double> const&) [33]
+                0.01    0.00 1522200/1522200     std::complex<double>::__rep() const [36]
+                0.00    0.00 1522200/1522200     std::__complex_abs(doublecomplex ) [47]
+-----------------------------------------------
+                0.00    0.02     860/860         BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[34]     0.1    0.00    0.02     860         Vector::Norm() const [34]
+                0.02    0.01 1522200/1522200     double std::abs<double>(std::complex<double> const&) [33]
+-----------------------------------------------
+                0.00    0.01 1142535/1142535     Vector::operator-(Vector const&) const [23]
+[35]     0.0    0.00    0.01 1142535         std::complex<double>& std::complex<double>::operator-=<double>(std::complex<double> const&) [35]
+                0.00    0.00 1142535/1356327485     std::complex<double>::real[abi:cxx11]() const [7]
+                0.00    0.00 1142535/1356327485     std::complex<double>::imag[abi:cxx11]() const [8]
+-----------------------------------------------
+                0.01    0.00 1522200/1522200     double std::abs<double>(std::complex<double> const&) [33]
+[36]     0.0    0.01    0.00 1522200         std::complex<double>::__rep() const [36]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<Vector, std::allocator<Vector> >::push_back(Vector const&) [38]
+[37]     0.0    0.00    0.00       2         void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00       4/40          Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&) [28]
+                0.00    0.00       2/2           void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector const&>(std::allocator<Vector>&, Vector*, Vector const&) [40]
+                0.00    0.00       6/62          std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() [87]
+                0.00    0.00       4/80          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::base() const [81]
+                0.00    0.00       2/20          std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [119]
+                0.00    0.00       2/20          std::vector<Vector, std::allocator<Vector> >::begin() [124]
+                0.00    0.00       2/20          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::difference_type __gnu_cxx::operator-<Vector*, std::vector<Vector, std::allocator<Vector> > >(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&, __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&) [118]
+                0.00    0.00       2/20          std::_Vector_base<Vector, std::allocator<Vector> >::_M_allocate(unsigned long) [120]
+                0.00    0.00       2/1028        Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&) [65]
+                0.00    0.00       2/22          void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&) [115]
+                0.00    0.00       2/22          std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long) [113]
+-----------------------------------------------
+                0.00    0.00       2/2           BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[38]     0.0    0.00    0.00       2         std::vector<Vector, std::allocator<Vector> >::push_back(Vector const&) [38]
+                0.00    0.00       2/2           void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00       2/20          std::vector<Vector, std::allocator<Vector> >::end() [123]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector const&>(std::allocator<Vector>&, Vector*, Vector const&) [40]
+[39]     0.0    0.00    0.00       2         void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&) [39]
+                0.00    0.00       2/7046        Vector::Vector(Vector const&) [11]
+                0.00    0.00       2/1028        Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&) [65]
+                0.00    0.00       2/5676        operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+[40]     0.0    0.00    0.00       2         void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector const&>(std::allocator<Vector>&, Vector*, Vector const&) [40]
+                0.00    0.00       2/2           void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&) [39]
+                0.00    0.00       2/1028        Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&) [65]
+-----------------------------------------------
+                0.00    0.00 1522200/1522200     double std::abs<double>(std::complex<double> const&) [33]
+[47]     0.0    0.00    0.00 1522200         std::__complex_abs(doublecomplex ) [47]
+-----------------------------------------------
+                0.00    0.00  783225/783225      main [1]
+[48]     0.0    0.00    0.00  783225         Matrix::operator[](int) const [48]
+-----------------------------------------------
+                0.00    0.00       2/7911        main [1]
+                0.00    0.00    1884/7911        void std::_Destroy<Vector>(Vector*) [63]
+                0.00    0.00    6025/7911        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[49]     0.0    0.00    0.00    7911         Vector::~Vector() [49]
+-----------------------------------------------
+                0.00    0.00       2/5676        void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&) [39]
+                0.00    0.00     860/5676        void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&) [30]
+                0.00    0.00     862/5676        void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [70]
+                0.00    0.00     885/5676        void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> const&>(std::complex<double>*, std::complex<double> const&) [67]
+                0.00    0.00    1022/5676        void std::_Construct<Vector, Vector const&>(Vector*, Vector const&) [24]
+                0.00    0.00    2045/5676        void std::_Construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [61]
+[50]     0.0    0.00    0.00    5676         operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.00      20/4651        void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+                0.00    0.00     862/4651        void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&) [72]
+                0.00    0.00     862/4651        void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&) [71]
+                0.00    0.00     862/4651        void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [70]
+                0.00    0.00    2045/4651        void std::_Construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [61]
+[51]     0.0    0.00    0.00    4651         std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&) [51]
+-----------------------------------------------
+                0.00    0.00    4214/4214        bool std::operator==<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&) [57]
+[52]     0.0    0.00    0.00    4214         std::move_iterator<std::complex<double>*>::base() const [52]
+-----------------------------------------------
+                0.00    0.00     885/3895        main [1]
+                0.00    0.00    3010/3895        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[53]     0.0    0.00    0.00    3895         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::operator[](unsigned long) [53]
+-----------------------------------------------
+                0.00    0.00    1022/2906        Vector* std::__uninitialized_copy<false>::__uninit_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [25]
+                0.00    0.00    1884/2906        void std::_Destroy_aux<false>::__destroy<Vector*>(Vector*, Vector*) [112]
+[54]     0.0    0.00    0.00    2906         Vector* std::__addressof<Vector>(Vector&) [54]
+-----------------------------------------------
+                0.00    0.00      18/2598        void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+                0.00    0.00     860/2598        void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [21]
+                0.00    0.00     860/2598        void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&) [31]
+                0.00    0.00     860/2598        void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&) [30]
+[55]     0.0    0.00    0.00    2598         Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&) [55]
+-----------------------------------------------
+                0.00    0.00    2580/2580        BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[56]     0.0    0.00    0.00    2580         std::vector<Vector, std::allocator<Vector> >::operator[](unsigned long) [56]
+-----------------------------------------------
+                0.00    0.00    2107/2107        bool std::operator!=<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&) [58]
+[57]     0.0    0.00    0.00    2107         bool std::operator==<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&) [57]
+                0.00    0.00    4214/4214        std::move_iterator<std::complex<double>*>::base() const [52]
+-----------------------------------------------
+                0.00    0.00    2107/2107        std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+[58]     0.0    0.00    0.00    2107         bool std::operator!=<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&) [58]
+                0.00    0.00    2107/2107        bool std::operator==<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&) [57]
+-----------------------------------------------
+                0.00    0.00    2045/2045        std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+[59]     0.0    0.00    0.00    2045         std::move_iterator<std::complex<double>*>::operator*() const [59]
+-----------------------------------------------
+                0.00    0.00    2045/2045        std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+[60]     0.0    0.00    0.00    2045         std::move_iterator<std::complex<double>*>::operator++() [60]
+-----------------------------------------------
+                0.00    0.00    2045/2045        std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+[61]     0.0    0.00    0.00    2045         void std::_Construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [61]
+                0.00    0.00    2045/4651        std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&) [51]
+                0.00    0.00    2045/5676        operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.00    2045/2045        std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+[62]     0.0    0.00    0.00    2045         std::complex<double>* std::__addressof<std::complex<double> >(std::complex<double>&) [62]
+-----------------------------------------------
+                0.00    0.00    1884/1884        void std::_Destroy_aux<false>::__destroy<Vector*>(Vector*, Vector*) [112]
+[63]     0.0    0.00    0.00    1884         void std::_Destroy<Vector>(Vector*) [63]
+                0.00    0.00    1884/7911        Vector::~Vector() [49]
+-----------------------------------------------
+                0.00    0.00      11/1781        void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00     885/1781        void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&) [68]
+                0.00    0.00     885/1781        void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> const&>(std::complex<double>*, std::complex<double> const&) [67]
+[64]     0.0    0.00    0.00    1781         std::complex<double> const& std::forward<std::complex<double> const&>(std::remove_reference<std::complex<double> const&>::type&) [64]
+-----------------------------------------------
+                0.00    0.00       2/1028        void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector const&>(std::allocator<Vector>&, Vector*, Vector const&) [40]
+                0.00    0.00       2/1028        void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00       2/1028        void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&) [39]
+                0.00    0.00    1022/1028        void std::_Construct<Vector, Vector const&>(Vector*, Vector const&) [24]
+[65]     0.0    0.00    0.00    1028         Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&) [65]
+-----------------------------------------------
+                0.00    0.00     124/1011        std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [106]
+                0.00    0.00     887/1011        main [1]
+[66]     0.0    0.00    0.00    1011         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::size() const [66]
+-----------------------------------------------
+                0.00    0.00     885/885         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&) [68]
+[67]     0.0    0.00    0.00     885         void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> const&>(std::complex<double>*, std::complex<double> const&) [67]
+                0.00    0.00     885/1781        std::complex<double> const& std::forward<std::complex<double> const&>(std::remove_reference<std::complex<double> const&>::type&) [64]
+                0.00    0.00     885/5676        operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.00      11/885         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00     874/885         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&) [69]
+[68]     0.0    0.00    0.00     885         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&) [68]
+                0.00    0.00     885/1781        std::complex<double> const& std::forward<std::complex<double> const&>(std::remove_reference<std::complex<double> const&>::type&) [64]
+                0.00    0.00     885/885         void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> const&>(std::complex<double>*, std::complex<double> const&) [67]
+-----------------------------------------------
+                0.00    0.00     885/885         main [1]
+[69]     0.0    0.00    0.00     885         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&) [69]
+                0.00    0.00     874/885         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&) [68]
+                0.00    0.00      11/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::end() [110]
+                0.00    0.00      11/11          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+-----------------------------------------------
+                0.00    0.00     862/862         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&) [71]
+[70]     0.0    0.00    0.00     862         void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [70]
+                0.00    0.00     862/4651        std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&) [51]
+                0.00    0.00     862/5676        operator new(unsigned long, void*) [50]
+-----------------------------------------------
+                0.00    0.00      20/862         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+                0.00    0.00     842/862         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&) [72]
+[71]     0.0    0.00    0.00     862         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&) [71]
+                0.00    0.00     862/4651        std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&) [51]
+                0.00    0.00     862/862         void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [70]
+-----------------------------------------------
+                0.00    0.00     862/862         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double>&&) [73]
+[72]     0.0    0.00    0.00     862         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&) [72]
+                0.00    0.00     862/4651        std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&) [51]
+                0.00    0.00     842/862         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&) [71]
+                0.00    0.00      20/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::end() [110]
+                0.00    0.00      20/20          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+-----------------------------------------------
+                0.00    0.00     862/862         BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[73]     0.0    0.00    0.00     862         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double>&&) [73]
+                0.00    0.00     862/862         std::remove_reference<std::complex<double>&>::type&& std::move<std::complex<double>&>(std::complex<double>&) [74]
+                0.00    0.00     862/862         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&) [72]
+-----------------------------------------------
+                0.00    0.00     862/862         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double>&&) [73]
+[74]     0.0    0.00    0.00     862         std::remove_reference<std::complex<double>&>::type&& std::move<std::complex<double>&>(std::complex<double>&) [74]
+-----------------------------------------------
+                0.00    0.00     860/860         std::vector<Vector, std::allocator<Vector> >::push_back(Vector&&) [22]
+[75]     0.0    0.00    0.00     860         std::remove_reference<Vector&>::type&& std::move<Vector&>(Vector&) [75]
+-----------------------------------------------
+                0.00    0.00      22/124         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      40/124         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+                0.00    0.00      62/124         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::difference_type __gnu_cxx::operator-<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&, __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&) [105]
+[76]     0.0    0.00    0.00     124         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::base() const [76]
+-----------------------------------------------
+                0.00    0.00     124/124         std::move_iterator<std::complex<double>*> std::__make_move_if_noexcept_iterator<std::complex<double>, std::move_iterator<std::complex<double>*> >(std::complex<double>*) [78]
+[77]     0.0    0.00    0.00     124         std::move_iterator<std::complex<double>*>::move_iterator(std::complex<double>*) [77]
+-----------------------------------------------
+                0.00    0.00     124/124         std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [92]
+[78]     0.0    0.00    0.00     124         std::move_iterator<std::complex<double>*> std::__make_move_if_noexcept_iterator<std::complex<double>, std::move_iterator<std::complex<double>*> >(std::complex<double>*) [78]
+                0.00    0.00     124/124         std::move_iterator<std::complex<double>*>::move_iterator(std::complex<double>*) [77]
+-----------------------------------------------
+                0.00    0.00       3/96          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector() [136]
+                0.00    0.00      33/96          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      60/96          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[79]     0.0    0.00    0.00      96         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() [79]
+-----------------------------------------------
+                0.00    0.00      31/93          __gnu_cxx::new_allocator<std::complex<double> >::allocate(unsigned long, void const*) [104]
+                0.00    0.00      62/93          std::allocator_traits<std::allocator<std::complex<double> > >::max_size(std::allocator<std::complex<double> > const&) [88]
+[80]     0.0    0.00    0.00      93         __gnu_cxx::new_allocator<std::complex<double> >::max_size() const [80]
+-----------------------------------------------
+                0.00    0.00       4/80          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      36/80          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+                0.00    0.00      40/80          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::difference_type __gnu_cxx::operator-<Vector*, std::vector<Vector, std::allocator<Vector> > >(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&, __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&) [118]
+[81]     0.0    0.00    0.00      80         __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::base() const [81]
+-----------------------------------------------
+                0.00    0.00      80/80          std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [119]
+[82]     0.0    0.00    0.00      80         std::vector<Vector, std::allocator<Vector> >::size() const [82]
+-----------------------------------------------
+                0.00    0.00      80/80          Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&) [28]
+[83]     0.0    0.00    0.00      80         Vector const* std::__make_move_if_noexcept_iterator<Vector, Vector const*>(Vector*) [83]
+-----------------------------------------------
+                0.00    0.00      31/62          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::end() [110]
+                0.00    0.00      31/62          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::begin() [111]
+[84]     0.0    0.00    0.00      62         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::__normal_iterator(std::complex<double>* const&) [84]
+-----------------------------------------------
+                0.00    0.00      62/62          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::max_size() const [86]
+[85]     0.0    0.00    0.00      62         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() const [85]
+-----------------------------------------------
+                0.00    0.00      62/62          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [106]
+[86]     0.0    0.00    0.00      62         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::max_size() const [86]
+                0.00    0.00      62/62          std::allocator_traits<std::allocator<std::complex<double> > >::max_size(std::allocator<std::complex<double> > const&) [88]
+                0.00    0.00      62/62          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() const [85]
+-----------------------------------------------
+                0.00    0.00       2/62          std::vector<Vector, std::allocator<Vector> >::~vector() [148]
+                0.00    0.00       6/62          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      54/62          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[87]     0.0    0.00    0.00      62         std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() [87]
+-----------------------------------------------
+                0.00    0.00      62/62          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::max_size() const [86]
+[88]     0.0    0.00    0.00      62         std::allocator_traits<std::allocator<std::complex<double> > >::max_size(std::allocator<std::complex<double> > const&) [88]
+                0.00    0.00      62/93          __gnu_cxx::new_allocator<std::complex<double> >::max_size() const [80]
+-----------------------------------------------
+                0.00    0.00      62/62          std::complex<double>* std::uninitialized_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [90]
+[89]     0.0    0.00    0.00      62         std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+                0.00    0.00    2107/2107        bool std::operator!=<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&) [58]
+                0.00    0.00    2045/2045        std::move_iterator<std::complex<double>*>::operator*() const [59]
+                0.00    0.00    2045/2045        std::complex<double>* std::__addressof<std::complex<double> >(std::complex<double>&) [62]
+                0.00    0.00    2045/2045        void std::_Construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [61]
+                0.00    0.00    2045/2045        std::move_iterator<std::complex<double>*>::operator++() [60]
+-----------------------------------------------
+                0.00    0.00      62/62          std::complex<double>* std::__uninitialized_copy_a<std::move_iterator<std::complex<double>*>, std::complex<double>*, std::complex<double> >(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*, std::allocator<std::complex<double> >&) [91]
+[90]     0.0    0.00    0.00      62         std::complex<double>* std::uninitialized_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [90]
+                0.00    0.00      62/62          std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [89]
+-----------------------------------------------
+                0.00    0.00      62/62          std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [92]
+[91]     0.0    0.00    0.00      62         std::complex<double>* std::__uninitialized_copy_a<std::move_iterator<std::complex<double>*>, std::complex<double>*, std::complex<double> >(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*, std::allocator<std::complex<double> >&) [91]
+                0.00    0.00      62/62          std::complex<double>* std::uninitialized_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [90]
+-----------------------------------------------
+                0.00    0.00      22/62          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      40/62          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[92]     0.0    0.00    0.00      62         std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [92]
+                0.00    0.00     124/124         std::move_iterator<std::complex<double>*> std::__make_move_if_noexcept_iterator<std::complex<double>, std::move_iterator<std::complex<double>*> >(std::complex<double>*) [78]
+                0.00    0.00      62/62          std::complex<double>* std::__uninitialized_copy_a<std::move_iterator<std::complex<double>*>, std::complex<double>*, std::complex<double> >(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*, std::allocator<std::complex<double> >&) [91]
+-----------------------------------------------
+                0.00    0.00      20/60          __gnu_cxx::new_allocator<Vector>::allocate(unsigned long, void const*) [117]
+                0.00    0.00      40/60          std::allocator_traits<std::allocator<Vector> >::max_size(std::allocator<Vector> const&) [98]
+[93]     0.0    0.00    0.00      60         __gnu_cxx::new_allocator<Vector>::max_size() const [93]
+-----------------------------------------------
+                0.00    0.00      20/51          std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [119]
+                0.00    0.00      31/51          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [106]
+[94]     0.0    0.00    0.00      51         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [94]
+-----------------------------------------------
+                0.00    0.00      20/40          std::vector<Vector, std::allocator<Vector> >::end() [123]
+                0.00    0.00      20/40          std::vector<Vector, std::allocator<Vector> >::begin() [124]
+[95]     0.0    0.00    0.00      40         __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::__normal_iterator(Vector* const&) [95]
+-----------------------------------------------
+                0.00    0.00      40/40          std::vector<Vector, std::allocator<Vector> >::max_size() const [97]
+[96]     0.0    0.00    0.00      40         std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() const [96]
+-----------------------------------------------
+                0.00    0.00      40/40          std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [119]
+[97]     0.0    0.00    0.00      40         std::vector<Vector, std::allocator<Vector> >::max_size() const [97]
+                0.00    0.00      40/40          std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() const [96]
+                0.00    0.00      40/40          std::allocator_traits<std::allocator<Vector> >::max_size(std::allocator<Vector> const&) [98]
+-----------------------------------------------
+                0.00    0.00      40/40          std::vector<Vector, std::allocator<Vector> >::max_size() const [97]
+[98]     0.0    0.00    0.00      40         std::allocator_traits<std::allocator<Vector> >::max_size(std::allocator<Vector> const&) [98]
+                0.00    0.00      40/60          __gnu_cxx::new_allocator<Vector>::max_size() const [93]
+-----------------------------------------------
+                0.00    0.00      34/34          void std::_Destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*) [101]
+[99]     0.0    0.00    0.00      34         void std::_Destroy_aux<true>::__destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*) [99]
+-----------------------------------------------
+                0.00    0.00       3/34          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::~_Vector_base() [134]
+                0.00    0.00      11/34          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      20/34          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[100]    0.0    0.00    0.00      34         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long) [100]
+                0.00    0.00      31/31          std::allocator_traits<std::allocator<std::complex<double> > >::deallocate(std::allocator<std::complex<double> >&, std::complex<double>*, unsigned long) [108]
+-----------------------------------------------
+                0.00    0.00      34/34          void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [102]
+[101]    0.0    0.00    0.00      34         void std::_Destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*) [101]
+                0.00    0.00      34/34          void std::_Destroy_aux<true>::__destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*) [99]
+-----------------------------------------------
+                0.00    0.00       3/34          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector() [136]
+                0.00    0.00      11/34          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      20/34          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[102]    0.0    0.00    0.00      34         void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [102]
+                0.00    0.00      34/34          void std::_Destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*) [101]
+-----------------------------------------------
+                0.00    0.00      31/31          std::allocator_traits<std::allocator<std::complex<double> > >::deallocate(std::allocator<std::complex<double> >&, std::complex<double>*, unsigned long) [108]
+[103]    0.0    0.00    0.00      31         __gnu_cxx::new_allocator<std::complex<double> >::deallocate(std::complex<double>*, unsigned long) [103]
+-----------------------------------------------
+                0.00    0.00      31/31          std::allocator_traits<std::allocator<std::complex<double> > >::allocate(std::allocator<std::complex<double> >&, unsigned long) [109]
+[104]    0.0    0.00    0.00      31         __gnu_cxx::new_allocator<std::complex<double> >::allocate(unsigned long, void const*) [104]
+                0.00    0.00      31/93          __gnu_cxx::new_allocator<std::complex<double> >::max_size() const [80]
+-----------------------------------------------
+                0.00    0.00      11/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      20/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[105]    0.0    0.00    0.00      31         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::difference_type __gnu_cxx::operator-<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&, __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&) [105]
+                0.00    0.00      62/124         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::base() const [76]
+-----------------------------------------------
+                0.00    0.00      11/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      20/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[106]    0.0    0.00    0.00      31         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [106]
+                0.00    0.00     124/1011        std::vector<std::complex<double>, std::allocator<std::complex<double> > >::size() const [66]
+                0.00    0.00      62/62          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::max_size() const [86]
+                0.00    0.00      31/51          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [94]
+-----------------------------------------------
+                0.00    0.00      11/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      20/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[107]    0.0    0.00    0.00      31         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_allocate(unsigned long) [107]
+                0.00    0.00      31/31          std::allocator_traits<std::allocator<std::complex<double> > >::allocate(std::allocator<std::complex<double> >&, unsigned long) [109]
+-----------------------------------------------
+                0.00    0.00      31/31          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long) [100]
+[108]    0.0    0.00    0.00      31         std::allocator_traits<std::allocator<std::complex<double> > >::deallocate(std::allocator<std::complex<double> >&, std::complex<double>*, unsigned long) [108]
+                0.00    0.00      31/31          __gnu_cxx::new_allocator<std::complex<double> >::deallocate(std::complex<double>*, unsigned long) [103]
+-----------------------------------------------
+                0.00    0.00      31/31          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_allocate(unsigned long) [107]
+[109]    0.0    0.00    0.00      31         std::allocator_traits<std::allocator<std::complex<double> > >::allocate(std::allocator<std::complex<double> >&, unsigned long) [109]
+                0.00    0.00      31/31          __gnu_cxx::new_allocator<std::complex<double> >::allocate(unsigned long, void const*) [104]
+-----------------------------------------------
+                0.00    0.00      11/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&) [69]
+                0.00    0.00      20/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&) [72]
+[110]    0.0    0.00    0.00      31         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::end() [110]
+                0.00    0.00      31/62          __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::__normal_iterator(std::complex<double>* const&) [84]
+-----------------------------------------------
+                0.00    0.00      11/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      20/31          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+[111]    0.0    0.00    0.00      31         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::begin() [111]
+                0.00    0.00      31/62          __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::__normal_iterator(std::complex<double>* const&) [84]
+-----------------------------------------------
+                0.00    0.00      22/22          void std::_Destroy<Vector*>(Vector*, Vector*) [114]
+[112]    0.0    0.00    0.00      22         void std::_Destroy_aux<false>::__destroy<Vector*>(Vector*, Vector*) [112]
+                0.00    0.00    1884/2906        Vector* std::__addressof<Vector>(Vector&) [54]
+                0.00    0.00    1884/1884        void std::_Destroy<Vector>(Vector*) [63]
+-----------------------------------------------
+                0.00    0.00       2/22          std::_Vector_base<Vector, std::allocator<Vector> >::~_Vector_base() [146]
+                0.00    0.00       2/22          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      18/22          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[113]    0.0    0.00    0.00      22         std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long) [113]
+                0.00    0.00      20/20          std::allocator_traits<std::allocator<Vector> >::deallocate(std::allocator<Vector>&, Vector*, unsigned long) [121]
+-----------------------------------------------
+                0.00    0.00      22/22          void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&) [115]
+[114]    0.0    0.00    0.00      22         void std::_Destroy<Vector*>(Vector*, Vector*) [114]
+                0.00    0.00      22/22          void std::_Destroy_aux<false>::__destroy<Vector*>(Vector*, Vector*) [112]
+-----------------------------------------------
+                0.00    0.00       2/22          std::vector<Vector, std::allocator<Vector> >::~vector() [148]
+                0.00    0.00       2/22          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      18/22          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[115]    0.0    0.00    0.00      22         void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&) [115]
+                0.00    0.00      22/22          void std::_Destroy<Vector*>(Vector*, Vector*) [114]
+-----------------------------------------------
+                0.00    0.00      20/20          std::allocator_traits<std::allocator<Vector> >::deallocate(std::allocator<Vector>&, Vector*, unsigned long) [121]
+[116]    0.0    0.00    0.00      20         __gnu_cxx::new_allocator<Vector>::deallocate(Vector*, unsigned long) [116]
+-----------------------------------------------
+                0.00    0.00      20/20          std::allocator_traits<std::allocator<Vector> >::allocate(std::allocator<Vector>&, unsigned long) [122]
+[117]    0.0    0.00    0.00      20         __gnu_cxx::new_allocator<Vector>::allocate(unsigned long, void const*) [117]
+                0.00    0.00      20/60          __gnu_cxx::new_allocator<Vector>::max_size() const [93]
+-----------------------------------------------
+                0.00    0.00       2/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      18/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[118]    0.0    0.00    0.00      20         __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::difference_type __gnu_cxx::operator-<Vector*, std::vector<Vector, std::allocator<Vector> > >(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&, __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&) [118]
+                0.00    0.00      40/80          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::base() const [81]
+-----------------------------------------------
+                0.00    0.00       2/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      18/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[119]    0.0    0.00    0.00      20         std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [119]
+                0.00    0.00      80/80          std::vector<Vector, std::allocator<Vector> >::size() const [82]
+                0.00    0.00      40/40          std::vector<Vector, std::allocator<Vector> >::max_size() const [97]
+                0.00    0.00      20/51          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [94]
+-----------------------------------------------
+                0.00    0.00       2/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      18/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[120]    0.0    0.00    0.00      20         std::_Vector_base<Vector, std::allocator<Vector> >::_M_allocate(unsigned long) [120]
+                0.00    0.00      20/20          std::allocator_traits<std::allocator<Vector> >::allocate(std::allocator<Vector>&, unsigned long) [122]
+-----------------------------------------------
+                0.00    0.00      20/20          std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long) [113]
+[121]    0.0    0.00    0.00      20         std::allocator_traits<std::allocator<Vector> >::deallocate(std::allocator<Vector>&, Vector*, unsigned long) [121]
+                0.00    0.00      20/20          __gnu_cxx::new_allocator<Vector>::deallocate(Vector*, unsigned long) [116]
+-----------------------------------------------
+                0.00    0.00      20/20          std::_Vector_base<Vector, std::allocator<Vector> >::_M_allocate(unsigned long) [120]
+[122]    0.0    0.00    0.00      20         std::allocator_traits<std::allocator<Vector> >::allocate(std::allocator<Vector>&, unsigned long) [122]
+                0.00    0.00      20/20          __gnu_cxx::new_allocator<Vector>::allocate(unsigned long, void const*) [117]
+-----------------------------------------------
+                0.00    0.00       2/20          std::vector<Vector, std::allocator<Vector> >::push_back(Vector const&) [38]
+                0.00    0.00      18/20          void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [21]
+[123]    0.0    0.00    0.00      20         std::vector<Vector, std::allocator<Vector> >::end() [123]
+                0.00    0.00      20/40          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::__normal_iterator(Vector* const&) [95]
+-----------------------------------------------
+                0.00    0.00       2/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [37]
+                0.00    0.00      18/20          void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [29]
+[124]    0.0    0.00    0.00      20         std::vector<Vector, std::allocator<Vector> >::begin() [124]
+                0.00    0.00      20/40          __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::__normal_iterator(Vector* const&) [95]
+-----------------------------------------------
+                0.00    0.00      20/20          void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&) [72]
+[125]    0.0    0.00    0.00      20         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&) [125]
+                0.00    0.00      60/96          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() [79]
+                0.00    0.00      40/124         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::base() const [76]
+                0.00    0.00      40/62          std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [92]
+                0.00    0.00      20/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [106]
+                0.00    0.00      20/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::begin() [111]
+                0.00    0.00      20/31          __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::difference_type __gnu_cxx::operator-<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&, __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&) [105]
+                0.00    0.00      20/31          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_allocate(unsigned long) [107]
+                0.00    0.00      20/4651        std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&) [51]
+                0.00    0.00      20/862         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&) [71]
+                0.00    0.00      20/34          void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [102]
+                0.00    0.00      20/34          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long) [100]
+-----------------------------------------------
+                0.00    0.00      11/11          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&) [69]
+[126]    0.0    0.00    0.00      11         void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&) [126]
+                0.00    0.00      33/96          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() [79]
+                0.00    0.00      22/124         __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::base() const [76]
+                0.00    0.00      22/62          std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [92]
+                0.00    0.00      11/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [106]
+                0.00    0.00      11/31          std::vector<std::complex<double>, std::allocator<std::complex<double> > >::begin() [111]
+                0.00    0.00      11/31          __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::difference_type __gnu_cxx::operator-<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&, __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&) [105]
+                0.00    0.00      11/31          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_allocate(unsigned long) [107]
+                0.00    0.00      11/1781        std::complex<double> const& std::forward<std::complex<double> const&>(std::remove_reference<std::complex<double> const&>::type&) [64]
+                0.00    0.00      11/885         void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&) [68]
+                0.00    0.00      11/34          void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [102]
+                0.00    0.00      11/34          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long) [100]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<std::complex<double> >::allocator() [129]
+[127]    0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::complex<double> >::new_allocator() [127]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<std::complex<double> >::~allocator() [130]
+[128]    0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::complex<double> >::~new_allocator() [128]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::_Vector_impl() [131]
+[129]    0.0    0.00    0.00       3         std::allocator<std::complex<double> >::allocator() [129]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::complex<double> >::new_allocator() [127]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::~_Vector_impl() [132]
+[130]    0.0    0.00    0.00       3         std::allocator<std::complex<double> >::~allocator() [130]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::complex<double> >::~new_allocator() [128]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_base() [133]
+[131]    0.0    0.00    0.00       3         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::_Vector_impl() [131]
+                0.00    0.00       3/3           std::allocator<std::complex<double> >::allocator() [129]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::~_Vector_base() [134]
+[132]    0.0    0.00    0.00       3         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::~_Vector_impl() [132]
+                0.00    0.00       3/3           std::allocator<std::complex<double> >::~allocator() [130]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::complex<double>, std::allocator<std::complex<double> > >::vector() [135]
+[133]    0.0    0.00    0.00       3         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_base() [133]
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::_Vector_impl() [131]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector() [136]
+[134]    0.0    0.00    0.00       3         std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::~_Vector_base() [134]
+                0.00    0.00       3/34          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long) [100]
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::~_Vector_impl() [132]
+-----------------------------------------------
+                0.00    0.00       1/3           main [1]
+                0.00    0.00       2/3           BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[135]    0.0    0.00    0.00       3         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::vector() [135]
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_base() [133]
+-----------------------------------------------
+                0.00    0.00       1/3           main [1]
+                0.00    0.00       2/3           BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[136]    0.0    0.00    0.00       3         std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector() [136]
+                0.00    0.00       3/96          std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() [79]
+                0.00    0.00       3/34          void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&) [102]
+                0.00    0.00       3/3           std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::~_Vector_base() [134]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[137]    0.0    0.00    0.00       2         tbb::tick_count::now() [137]
+                0.00    0.00       2/2           tbb::tick_count::tick_count() [138]
+-----------------------------------------------
+                0.00    0.00       2/2           tbb::tick_count::now() [137]
+[138]    0.0    0.00    0.00       2         tbb::tick_count::tick_count() [138]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<Vector>::allocator() [141]
+[139]    0.0    0.00    0.00       2         __gnu_cxx::new_allocator<Vector>::new_allocator() [139]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<Vector>::~allocator() [142]
+[140]    0.0    0.00    0.00       2         __gnu_cxx::new_allocator<Vector>::~new_allocator() [140]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::_Vector_impl() [143]
+[141]    0.0    0.00    0.00       2         std::allocator<Vector>::allocator() [141]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<Vector>::new_allocator() [139]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::~_Vector_impl() [144]
+[142]    0.0    0.00    0.00       2         std::allocator<Vector>::~allocator() [142]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<Vector>::~new_allocator() [140]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_base() [145]
+[143]    0.0    0.00    0.00       2         std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::_Vector_impl() [143]
+                0.00    0.00       2/2           std::allocator<Vector>::allocator() [141]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::~_Vector_base() [146]
+[144]    0.0    0.00    0.00       2         std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::~_Vector_impl() [144]
+                0.00    0.00       2/2           std::allocator<Vector>::~allocator() [142]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<Vector, std::allocator<Vector> >::vector() [147]
+[145]    0.0    0.00    0.00       2         std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_base() [145]
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::_Vector_impl() [143]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<Vector, std::allocator<Vector> >::~vector() [148]
+[146]    0.0    0.00    0.00       2         std::_Vector_base<Vector, std::allocator<Vector> >::~_Vector_base() [146]
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::~_Vector_impl() [144]
+                0.00    0.00       2/22          std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long) [113]
+-----------------------------------------------
+                0.00    0.00       2/2           BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[147]    0.0    0.00    0.00       2         std::vector<Vector, std::allocator<Vector> >::vector() [147]
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_base() [145]
+-----------------------------------------------
+                0.00    0.00       2/2           BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [2]
+[148]    0.0    0.00    0.00       2         std::vector<Vector, std::allocator<Vector> >::~vector() [148]
+                0.00    0.00       2/62          std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() [87]
+                0.00    0.00       2/22          void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&) [115]
+                0.00    0.00       2/2           std::_Vector_base<Vector, std::allocator<Vector> >::~_Vector_base() [146]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [224]
+[149]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN8BICGSTAB5SolveERK6MatrixR6VectorRKS3_ [149]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [224]
+[150]    0.0    0.00    0.00       1         _GLOBAL__sub_I_main [150]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [152]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8BICGSTAB5SolveERK6MatrixR6VectorRKS3_ [149]
+[151]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [150]
+[152]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [152]
+-----------------------------------------------
+                0.00    0.00       1/1           tbb::tick_count::resolution() [155]
+[153]    0.0    0.00    0.00       1         tbb::tick_count::interval_t::ticks_per_second() [153]
+-----------------------------------------------
+                0.00    0.00       1/1           tbb::operator-(tbb::tick_count const&, tbb::tick_count const&) [156]
+[154]    0.0    0.00    0.00       1         tbb::tick_count::interval_t::interval_t(long long) [154]
+-----------------------------------------------
+                0.00    0.00       1/1           tbb::tick_count::interval_t::seconds() const [158]
+[155]    0.0    0.00    0.00       1         tbb::tick_count::resolution() [155]
+                0.00    0.00       1/1           tbb::tick_count::interval_t::ticks_per_second() [153]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[156]    0.0    0.00    0.00       1         tbb::operator-(tbb::tick_count const&, tbb::tick_count const&) [156]
+                0.00    0.00       1/1           tbb::tick_count::interval_t::interval_t(long long) [154]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[157]    0.0    0.00    0.00       1         BICGSTAB::BICGSTAB(int, double) [157]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[158]    0.0    0.00    0.00       1         tbb::tick_count::interval_t::seconds() const [158]
+                0.00    0.00       1/1           tbb::tick_count::resolution() [155]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [149] _GLOBAL__sub_I__ZN8BICGSTAB5SolveERK6MatrixR6VectorRKS3_ (BICGSTAB.cpp) [97] std::vector<Vector, std::allocator<Vector> >::max_size() const [72] void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::emplace_back<std::complex<double> >(std::complex<double>&&)
+ [150] _GLOBAL__sub_I_main (main.cpp) [106] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_check_len(unsigned long, char const*) const [126] void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> const&>(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double> const&)
+ [151] __static_initialization_and_destruction_0(int, int) (BICGSTAB.cpp) [66] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::size() const [125] void std::vector<std::complex<double>, std::allocator<std::complex<double> > >::_M_realloc_insert<std::complex<double> >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >, std::complex<double>&&)
+ [152] __static_initialization_and_destruction_0(int, int) (main.cpp) [86] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::max_size() const [110] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::end()
+ [153] tbb::tick_count::interval_t::ticks_per_second() [8] std::complex<double>::imag[abi:cxx11]() const [111] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::begin()
+ [154] tbb::tick_count::interval_t::interval_t(long long) [7] std::complex<double>::real[abi:cxx11]() const [73] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double>&&)
+ [155] tbb::tick_count::resolution() [36] std::complex<double>::__rep() const [69] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::push_back(std::complex<double> const&)
+ [137] tbb::tick_count::now() [141] std::allocator<Vector>::allocator() [135] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::vector()
+ [138] tbb::tick_count::tick_count() [142] std::allocator<Vector>::~allocator() [136] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::~vector()
+ [156] tbb::operator-(tbb::tick_count const&, tbb::tick_count const&) [129] std::allocator<std::complex<double> >::allocator() [53] std::vector<std::complex<double>, std::allocator<std::complex<double> > >::operator[](unsigned long)
+  [17] Matrix::Matrix(int)   [130] std::allocator<std::complex<double> >::~allocator() [14] std::complex<double>::complex(double, double)
+  [16] Vector::Vector(int)   [112] void std::_Destroy_aux<false>::__destroy<Vector*>(Vector*, Vector*) [13] std::complex<double>::operator=(double)
+  [11] Vector::Vector(Vector const&) [99] void std::_Destroy_aux<true>::__destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*) [15] std::complex<double>& std::complex<double>::operator/=<double>(std::complex<double> const&)
+  [49] Vector::~Vector()     [120] std::_Vector_base<Vector, std::allocator<Vector> >::_M_allocate(unsigned long) [35] std::complex<double>& std::complex<double>::operator-=<double>(std::complex<double> const&)
+   [2] BICGSTAB::Solve(Matrix const&, Vector&, Vector const&) [143] std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::_Vector_impl() [5] std::complex<double>& std::complex<double>::operator*=<double>(std::complex<double> const&)
+ [157] BICGSTAB::BICGSTAB(int, double) [144] std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_impl::~_Vector_impl() [6] std::complex<double>& std::complex<double>::operator+=<double>(std::complex<double> const&)
+ [116] __gnu_cxx::new_allocator<Vector>::deallocate(Vector*, unsigned long) [113] std::_Vector_base<Vector, std::allocator<Vector> >::_M_deallocate(Vector*, unsigned long) [24] void std::_Construct<Vector, Vector const&>(Vector*, Vector const&)
+ [117] __gnu_cxx::new_allocator<Vector>::allocate(unsigned long, void const*) [87] std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() [61] void std::_Construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&)
+  [39] void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector const&>(Vector*, Vector const&) [145] std::_Vector_base<Vector, std::allocator<Vector> >::_Vector_base() [54] Vector* std::__addressof<Vector>(Vector&)
+  [30] void __gnu_cxx::new_allocator<Vector>::construct<Vector, Vector>(Vector*, Vector&&) [146] std::_Vector_base<Vector, std::allocator<Vector> >::~_Vector_base() [62] std::complex<double>* std::__addressof<std::complex<double> >(std::complex<double>&)
+ [139] __gnu_cxx::new_allocator<Vector>::new_allocator() [107] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_allocate(unsigned long) [47] std::__complex_abs(doublecomplex )
+ [140] __gnu_cxx::new_allocator<Vector>::~new_allocator() [131] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::_Vector_impl() [26] Vector* std::uninitialized_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*)
+ [103] __gnu_cxx::new_allocator<std::complex<double> >::deallocate(std::complex<double>*, unsigned long) [132] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_impl::~_Vector_impl() [90] std::complex<double>* std::uninitialized_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*)
+ [104] __gnu_cxx::new_allocator<std::complex<double> >::allocate(unsigned long, void const*) [100] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_deallocate(std::complex<double>*, unsigned long) [27] Vector* std::__uninitialized_copy_a<Vector const*, Vector*, Vector>(Vector const*, Vector const*, Vector*, std::allocator<Vector>&)
+  [67] void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> const&>(std::complex<double>*, std::complex<double> const&) [79] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() [91] std::complex<double>* std::__uninitialized_copy_a<std::move_iterator<std::complex<double>*>, std::complex<double>*, std::complex<double> >(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*, std::allocator<std::complex<double> >&)
+  [70] void __gnu_cxx::new_allocator<std::complex<double> >::construct<std::complex<double>, std::complex<double> >(std::complex<double>*, std::complex<double>&&) [133] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_Vector_base() [83] Vector const* std::__make_move_if_noexcept_iterator<Vector, Vector const*>(Vector*)
+ [127] __gnu_cxx::new_allocator<std::complex<double> >::new_allocator() [134] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::~_Vector_base() [78] std::move_iterator<std::complex<double>*> std::__make_move_if_noexcept_iterator<std::complex<double>, std::move_iterator<std::complex<double>*> >(std::complex<double>*)
+ [128] __gnu_cxx::new_allocator<std::complex<double> >::~new_allocator() [77] std::move_iterator<std::complex<double>*>::move_iterator(std::complex<double>*) [28] Vector* std::__uninitialized_move_if_noexcept_a<Vector*, Vector*, std::allocator<Vector> >(Vector*, Vector*, Vector*, std::allocator<Vector>&)
+  [95] __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::__normal_iterator(Vector* const&) [60] std::move_iterator<std::complex<double>*>::operator++() [92] std::complex<double>* std::__uninitialized_move_if_noexcept_a<std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> > >(std::complex<double>*, std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&)
+  [84] __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::__normal_iterator(std::complex<double>* const&) [121] std::allocator_traits<std::allocator<Vector> >::deallocate(std::allocator<Vector>&, Vector*, unsigned long) [33] double std::abs<double>(std::complex<double> const&)
+ [118] __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::difference_type __gnu_cxx::operator-<Vector*, std::vector<Vector, std::allocator<Vector> > >(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&, __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > > const&) [122] std::allocator_traits<std::allocator<Vector> >::allocate(std::allocator<Vector>&, unsigned long) [94] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [105] __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::difference_type __gnu_cxx::operator-<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >(__gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&, __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > > const&) [98] std::allocator_traits<std::allocator<Vector> >::max_size(std::allocator<Vector> const&) [75] std::remove_reference<Vector&>::type&& std::move<Vector&>(Vector&)
+ [158] tbb::tick_count::interval_t::seconds() const [40] void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector const&>(std::allocator<Vector>&, Vector*, Vector const&) [74] std::remove_reference<std::complex<double>&>::type&& std::move<std::complex<double>&>(std::complex<double>&)
+  [48] Matrix::operator[](int) const [31] void std::allocator_traits<std::allocator<Vector> >::construct<Vector, Vector>(std::allocator<Vector>&, Vector*, Vector&&) [55] Vector&& std::forward<Vector>(std::remove_reference<Vector>::type&)
+   [3] Matrix::operator*(Vector const&) const [108] std::allocator_traits<std::allocator<std::complex<double> > >::deallocate(std::allocator<std::complex<double> >&, std::complex<double>*, unsigned long) [65] Vector const& std::forward<Vector const&>(std::remove_reference<Vector const&>::type&)
+  [19] Vector::InnerProduct(Vector const&) const [109] std::allocator_traits<std::allocator<std::complex<double> > >::allocate(std::allocator<std::complex<double> >&, unsigned long) [64] std::complex<double> const& std::forward<std::complex<double> const&>(std::remove_reference<std::complex<double> const&>::type&)
+  [34] Vector::Norm() const   [88] std::allocator_traits<std::allocator<std::complex<double> > >::max_size(std::allocator<std::complex<double> > const&) [51] std::complex<double>&& std::forward<std::complex<double> >(std::remove_reference<std::complex<double> >::type&)
+  [18] Vector::Size() const   [68] void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> const&>(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double> const&) [63] void std::_Destroy<Vector>(Vector*)
+   [9] Vector::operator[](int) const [71] void std::allocator_traits<std::allocator<std::complex<double> > >::construct<std::complex<double>, std::complex<double> >(std::allocator<std::complex<double> >&, std::complex<double>*, std::complex<double>&&) [114] void std::_Destroy<Vector*>(Vector*, Vector*)
+  [23] Vector::operator-(Vector const&) const [25] Vector* std::__uninitialized_copy<false>::__uninit_copy<Vector const*, Vector*>(Vector const*, Vector const*, Vector*) [115] void std::_Destroy<Vector*, Vector>(Vector*, Vector*, std::allocator<Vector>&)
+  [20] Vector::operator+(Vector const&) const [89] std::complex<double>* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::complex<double>*>, std::complex<double>*>(std::move_iterator<std::complex<double>*>, std::move_iterator<std::complex<double>*>, std::complex<double>*) [101] void std::_Destroy<std::complex<double>*>(std::complex<double>*, std::complex<double>*)
+  [93] __gnu_cxx::new_allocator<Vector>::max_size() const [21] void std::vector<Vector, std::allocator<Vector> >::emplace_back<Vector>(Vector&&) [102] void std::_Destroy<std::complex<double>*, std::complex<double> >(std::complex<double>*, std::complex<double>*, std::allocator<std::complex<double> >&)
+  [80] __gnu_cxx::new_allocator<std::complex<double> >::max_size() const [37] void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector const&>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector const&) [10] std::complex<double> std::operator/<double>(std::complex<double> const&, std::complex<double> const&)
+  [81] __gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >::base() const [29] void std::vector<Vector, std::allocator<Vector> >::_M_realloc_insert<Vector>(__gnu_cxx::__normal_iterator<Vector*, std::vector<Vector, std::allocator<Vector> > >, Vector&&) [57] bool std::operator==<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&)
+  [76] __gnu_cxx::__normal_iterator<std::complex<double>*, std::vector<std::complex<double>, std::allocator<std::complex<double> > > >::base() const [123] std::vector<Vector, std::allocator<Vector> >::end() [4] std::complex<double> std::operator*<double>(std::complex<double> const&, std::complex<double> const&)
+  [96] std::_Vector_base<Vector, std::allocator<Vector> >::_M_get_Tp_allocator() const [124] std::vector<Vector, std::allocator<Vector> >::begin() [58] bool std::operator!=<std::complex<double>*>(std::move_iterator<std::complex<double>*> const&, std::move_iterator<std::complex<double>*> const&)
+  [85] std::_Vector_base<std::complex<double>, std::allocator<std::complex<double> > >::_M_get_Tp_allocator() const [22] std::vector<Vector, std::allocator<Vector> >::push_back(Vector&&) [32] std::complex<double> std::operator+<double>(std::complex<double> const&, std::complex<double> const&)
+  [52] std::move_iterator<std::complex<double>*>::base() const [38] std::vector<Vector, std::allocator<Vector> >::push_back(Vector const&) [12] operator*(std::complex<double> const&, Vector const&)
+  [59] std::move_iterator<std::complex<double>*>::operator*() const [147] std::vector<Vector, std::allocator<Vector> >::vector() [50] operator new(unsigned long, void*)
+ [119] std::vector<Vector, std::allocator<Vector> >::_M_check_len(unsigned long, char const*) const [148] std::vector<Vector, std::allocator<Vector> >::~vector()
+  [82] std::vector<Vector, std::allocator<Vector> >::size() const [56] std::vector<Vector, std::allocator<Vector> >::operator[](unsigned long)
