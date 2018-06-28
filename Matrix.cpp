@@ -24,19 +24,15 @@ void Matrix::Random()
 
 Vector Matrix::operator*(const Vector &rhs) const
 {
-	assert(rhs.Size() == demension);
+	// assert(rhs.Size() == demension);
 	Vector ret(rhs.Size());
-
+	#pragma omp parallel for  num_threads(10)
 	for (int i = 0; i < demension; i++)
 	{
-
-		std::complex<double> sum = 0;
-
 		for (int j = 0; j < demension; j++)
 		{
-			sum += m[i * demension + j] * rhs[j];
+			ret[i] += m[i * demension + j] * rhs[j];
 		}
-		ret[i] = sum;
 	}
 
 	return ret;
